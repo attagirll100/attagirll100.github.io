@@ -7,11 +7,11 @@ body {
     background-color: aqua;
 }
 
-.Player1 {
+#Player1 {
     color: black;
 }
 
-.Player2 {
+#Player2 {
     color: red;
 }
 
