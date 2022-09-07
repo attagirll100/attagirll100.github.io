@@ -4,14 +4,21 @@ h1 {
 }
 
 body {
-    background-color: aqua;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center; /* centers connect four board */
 }
 
-#Player1 {
-    color: black;
-}
 
-#Player2 {
-    color: red;
-}
 
+#Board {
+/*connect four board img url: https://upload.wikimedia.org/wikipedia/commons/8/87/Connect4_Empty.PNG?20160206185459 */    
+    height: 470px;
+    width: 639px;
+
+background-color: palegreen;
+border: 12px solid  chartreuse;
+
+margin: auto;
+display: flex;
+flex-wrap: wrap; /* used to to divide connect four box into multiple lines */
+}
