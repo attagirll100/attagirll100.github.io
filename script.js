@@ -38,3 +38,9 @@ function checkWin(TheWinner) {
     for(let i = 0; tiles.length; i++)
 
 }
+
+function youlose() {
+    for(let i = 0; i < 4; i--) {
+        console.log('you lose');
+    }
+}); 
