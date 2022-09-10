@@ -1,24 +1,54 @@
 
 h1 {
     color: red;
+    text-align: center;
 }
 
 body {
-   font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center; /* centers connect four board */
-}
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+     text-align: center; /* centers connect four board */
+ }
 
 
 
 #Board {
 /*connect four board img url: https://upload.wikimedia.org/wikipedia/commons/8/87/Connect4_Empty.PNG?20160206185459 */    
-    height: 470px;
+    height: 600px;
     width: 639px;
+  
 
 background-color: palegreen;
-border: 12px solid  chartreuse;
-
-margin: auto;
+border: 12px solid  chartreuse; /*color around board border */
+margin: 0 auto; 
 display: flex;
 flex-wrap: wrap; /* used to to divide connect four box into multiple lines */
+}
+
+
+
+.tile {
+    height: 90px;
+    width: 90px;
+    margin: 8px;
+   
+
+    background-color: white; /* color for tile circle */
+    border-radius: 45%;
+    border: 5px solid pink;/* color for around white tile circle */
+
+}
+
+#current-player {
+    background: cornflowerblue;
+}
+
+.player-wonderwoman { /* class for player */
+    background-color: red;
+    border: radius 45px;;
+
+} 
+
+.player-batman { /* class for player */
+    background-color: black;
+    border-radius: 45px;
 }

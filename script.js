@@ -1,33 +1,40 @@
 
-let playerBatman = "blk"
-let playerWonderwoman = "red"
-let currPlayer = playerBatman;
+    let playerbatman = "batman"
+    let playerwonderwoman = "wonderwoman"
+    let currentPlayer = playerwonderwoman;
+    
 
-let gameOver = false;
-let Board;
-// board contect
-let rows = 4; 
-let columns = 5;
 
-windows.onload = function() { //https://developer.mozilla.org/en-US/docs/Web/API/Window/load_event
-    positionGame();
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const tiles = document.querySelectorAll('div.tile')//grabs all tile class in html
+    const winner = document.getElementById('TheWinner')
+    const displaycurrentplayer = document.getElementById('current-player')
+    
+    
+
+let iscurrentPlayer = true
+
+if( iscurrentPlayer === true) {
+    displaycurrentplayer.innerHTML = currentPlayer
+    iscurrentPlayer = false;
+    tiles.addEventListener('click',(event) => {
+    });
+
+
+    //indicates what happens when its batmanman turn
+    let currentPlayer = playerbatman
+} else{ displaycurrentplayer.innerHTML = currentPlayer 
+        tiles.addEventListener('click', () => {
+            tiles.addEventListener('click',(event) => {
+            });
+  
 }
 
 
+function checkWin(TheWinner) {
+    for(let i = 0; tiles.length; i++)
 
-function positionGame() { // this function will popup tiles inside connect four board. 
-    Board = []; //JS board the board correlates with the tile
-    
-    for(let r = 0; r < rows; r++) {
-        let row = [];
-        for(let c = 0; c < columns; c++) {
-
-            
-
-        }
-    }
-
-
-
-} 
-
+}
